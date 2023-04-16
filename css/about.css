@@ -1,0 +1,126 @@
+/* Global styles */
+:root {
+  --primary-color: #141414;
+  --secondary-color: #6c757d;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body { 
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: auto;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Main content styles */
+main {
+  margin-top: 50px;
+}
+section#about {
+  margin-top: 125px;
+
+}
+
+section#about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+
+.p:first-child {
+  margin-top: 0;
+}
+
+.p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Footer styles */
+footer {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

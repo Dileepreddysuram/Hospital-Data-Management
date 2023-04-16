@@ -1,0 +1,82 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Style the logo */
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+header nav ul li a {
+	font-weight: bold;
+}
+nav ul li a:hover {
+  color: #0088cc;
+}
+
+/* Style the page content */
+h1, h2 {
+  text-align: center;
+}
+.booking {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="date"] {
+  border: none;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}

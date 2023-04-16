@@ -1,0 +1,71 @@
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Style the logo */
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+header nav ul li a {
+	font-weight: bold;
+}
+nav ul li a:hover {
+  color: #0088cc;
+}
+/* Styles for the services section */
+#services {
+  padding: 50px;
+}
+
+.service-item {
+  margin-bottom: 50px;
+}
+
+.service-item img {
+  max-width: 100%;
+}
+
+.service-item h3 {
+  margin-top: 20px;
+}
+
+.service-item p {
+  margin-top: 10px;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

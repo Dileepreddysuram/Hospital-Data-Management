@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="css\getdata.css">
+  </head>
+  <body class="appo">
+    <header>
+      <img src="images/logo1.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Doctors.html">Doctors</a></li>
+          <li><a href="http://localhost:3000/">Appointment Booking</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="http://localhost:3000/signup">Sign In</a></li>
+          <li><a href="http://localhost:3000/getall">getpatientdetails</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome to SDR Healthcare</h1>
+    <h2>Book an Appointment</h2>
+    <form class="booking" method="post" action="/api/getpatientdetails">
+      <label for="date">Select a Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+  </body>
+  <script src="Applontment.js"></script>
+  <footer>
+		<p class="f">&copy; 2023 SDR GROUPS. All rights reserved.</p>
+	</footer>
+</html>

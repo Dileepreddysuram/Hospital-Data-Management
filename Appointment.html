@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="css\booking.css">
+  </head>
+  <body class="appo">
+    <header>
+      <img src="images/logo1.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Doctors.html">Doctors</a></li>
+          <li><a href="http://localhost:3000/">Appointment Booking</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="http://localhost:3000/signup">Sign In</a></li>
+          <li><a href="http://localhost:3000/getall">getpatientdetails</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome to SDR Healthcare</h1>
+    <h2>Book an Appointment</h2>
+    <form class="booking" method="post" action="/api/post" >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="doctor">Select a Doctor:</label>
+      <select id="doctor" name="doctor" required>
+        <option value="">Please select</option>
+        <option value="Dr. Smith">DrSmith</option>
+        <option value="Dr. Jones">DrJones</option>
+        <option value="Dr. Lee">Dree</option>
+        <option value="Dr. Anurudh">DAnurudh</option>
+        <option value="Dr. Suram">DrSuram</option>
+        <option value="Dr. Sindhu">DrSindhu</option>
+        <option value="Dr. Rajram">DrRajram</option>
+      </select><br><br>
+      <label for="date">Select a Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+      <label for="time">Select a Time:</label>
+      <input type="time" id="time" name="time" required><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+    
+  </body>
+  <script src="Applontment.js"></script>
+  <footer>
+		<p class="f">&copy; 2023 SDR GROUPS. All rights reserved.</p>
+	</footer>
+</html>
