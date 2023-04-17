@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API JSON Data Table</title>
+</head>
+<style>
+  table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+<body>
+	<h1>API JSON Data Table</h1>
+	<table id="myTable">
+		<thead>
+			<tr>
+				<th>Patient Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+        <th>Doctor</th>
+				<th>Date</th>
+				<th>Time</th>
+			</tr>
+		</thead>
+		<tbody>
+
+      <script>
+       const jsonData = JSON.parse(decodeURIComponent(location.search.substring(6)));
+       const tableBody = document.querySelector('#myTable tbody');
+
+       for (const obj of jsonData) {
+         const row = document.createElement('tr');
+         row.innerHTML = `
+          <td>${obj.name}</td>
+          <td>${obj.email}</td>
+          <td>${obj.phone}</td>
+          <td>${obj.doctor}</td>
+          <td>${obj.date}</td>
+          <td>${obj.time}</td>
+        `;
+  tableBody.appendChild(row);
+}
+      </script>
+		</tbody>
+	</table>
+</body>
+</html>
