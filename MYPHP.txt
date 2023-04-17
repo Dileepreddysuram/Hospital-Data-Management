@@ -1,0 +1,11 @@
+Your MySQL username: s_dsuram
+Your MySQL password: qyhmPFAK
+
+
+
+Mongo 
+
+mongodb://localhost:27017
+
+
+mongodb+srv://dsuram:Sdr%212509@cluster0.99cxlfs.mongodb.net/test
